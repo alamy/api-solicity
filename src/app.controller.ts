@@ -15,4 +15,9 @@ export class AppController {
   async postUser(@Body() UsuarioDto: UsuarioDto) {
     return this.appService.postUser(UsuarioDto);
   }
+
+  @Post('/validador')
+  getUserID(@Body() UsuarioDto: UsuarioDto) {
+    return this.appService.getUserID(UsuarioDto.name, UsuarioDto.senha);
+  }
 }
