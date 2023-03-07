@@ -23,7 +23,20 @@ export class AppService {
   }
 
   postUser(usuario: Usuario) {
-    this.config.push(usuario);
-    return 'Usuario inserido';
+    let retorno;
+    if (
+      usuario.name === '' ||
+      usuario.email === '' ||
+      usuario.telefone === '' ||
+      usuario.senha === '' ||
+      usuario.cnpj === ''
+    ) {
+      retorno = 'false';
+    } else {
+      this.config.push(usuario);
+      retorno = 'true';
+    }
+
+    return retorno;
   }
 }

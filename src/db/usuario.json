@@ -4,13 +4,15 @@
         "senha" : "admin",
         "email" : "admin@admin.com",
         "telefone" : "81 0000000",
-        "cnpj": "24.216.879/0001-71"
+        "cnpj": "24.216.879/0001-71",
+        "tipo": "ong"
     },
     {
         "name": "alamy",
         "senha" : "neto2906",
         "email" : "alamy@admin.com",
         "telefone" : "81 0000000",
-        "cnpj": "24.216.879/0001-71"
+        "cnpj": "24.216.879/0001-71",
+        "tipo": "coperativa"
     }
 ]
