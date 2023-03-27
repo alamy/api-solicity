@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
-import { UsuarioDto } from './dto/usuario.dto';
+import { UsuarioDto } from './ator/dto/usuario.dto';
 
 @Controller('user')
 export class AppController {
@@ -16,7 +16,7 @@ export class AppController {
     return this.appService.postUser(UsuarioDto);
   }
 
-  @Post('/validador')
+  @Get(':name')
   getUserID(@Body() UsuarioDto: UsuarioDto) {
     return this.appService.getUserID(UsuarioDto.name, UsuarioDto.senha);
   }

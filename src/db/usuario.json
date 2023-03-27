@@ -5,7 +5,9 @@
         "email" : "admin@admin.com",
         "telefone" : "81 0000000",
         "cnpj": "24.216.879/0001-71",
-        "tipo": "ong"
+        "tipo": "ong",
+        "lat": "-8.0473728",
+        "long": "-34.9072543"
     },
     {
         "name": "alamy",
@@ -13,6 +15,8 @@
         "email" : "alamy@admin.com",
         "telefone" : "81 0000000",
         "cnpj": "24.216.879/0001-71",
-        "tipo": "coperativa"
+        "tipo": "empresa",
+        "lat": "-8.0473728",
+        "long": "-34.9072543"
     }
 ]

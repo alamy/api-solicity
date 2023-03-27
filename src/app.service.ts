@@ -5,21 +5,21 @@ import { Usuario } from './interfaces/usuario.interface';
 @Injectable()
 export class AppService {
   config = usuarios;
-  resultado: boolean;
+ 
   getUser() {
     return this.config;
   }
 
   getUserID(name, senha) {
+     let resultado;
     for (let i = 0; i < this.config.length; i++) {
       if (name === this.config[i].name && senha === this.config[i].senha) {
-        this.resultado = true;
-        break;
+        resultado = 'true';
       } else {
-        this.resultado = false;
+        resultado = 'false';
       }
     }
-    return this.resultado;
+    return resultado;
   }
 
   postUser(usuario: Usuario) {
